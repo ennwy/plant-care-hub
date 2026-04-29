@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plant-care-hub — спільнота</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header" role="banner">
+    <div class="logo">
+        <img src="images/logo.svg" alt="логотип plant-care-hub" width="40" height="40">
+        <span>plant-care-hub</span>
+    </div>
+    <nav class="main-nav" aria-label="головна навігація">
+        <ul>
+            <li><a href="index.html">головна</a></li>
+            <li><a href="catalog.html">каталог</a></li>
+            <li><a href="herbarium.html">мій гербарій</a></li>
+            <li><a href="community.html" class="active">спільнота</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <a href="#" class="btn btn-ghost">login</a>
+        <a href="#" class="btn btn-primary">register</a>
+    </div>
+</header>
+
+<main class="community-page">
+    <section class="tips-feed" aria-label="стрічка порад">
+        <h1>спільнота</h1>
+        <article class="tip-post">
+            <header class="tip-post-head">
+                <img src="images/avatar1.png" alt="аватар olena">
+                <div>
+                    <strong>olena</strong>
+                    <time datetime="2026-05-09">9 травня 2026</time>
+                </div>
+            </header>
+            <p>як полити фікус: раз на тиждень, м'якою водою кімнатної температури. не заливати!</p>
+            <footer class="tip-post-foot">
+                <button class="btn btn-ghost">♥ 12</button>
+                <button class="btn btn-ghost">коментарі (3)</button>
+            </footer>
+        </article>
+
+        <article class="tip-post">
+            <header class="tip-post-head">
+                <img src="images/avatar2.png" alt="аватар ivan">
+                <div>
+                    <strong>ivan</strong>
+                    <time datetime="2026-05-08">8 травня 2026</time>
+                </div>
+            </header>
+            <p>освітлення для сукулентів: пряме сонце вранці, притінення у спеку.</p>
+            <footer class="tip-post-foot">
+                <button class="btn btn-ghost">♥ 8</button>
+                <button class="btn btn-ghost">коментарі (1)</button>
+            </footer>
+        </article>
+    </section>
+
+    <aside class="add-tip" aria-label="форма додавання поради">
+        <h2>поділись порадою</h2>
+        <form action="#" method="post">
+            <label>
+                заголовок
+                <input type="text" name="title" required>
+            </label>
+            <label>
+                email (для відповіді)
+                <input type="email" name="email" placeholder="you@example.com">
+            </label>
+            <label>
+                текст
+                <textarea name="body" rows="5" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">опублікувати</button>
+        </form>
+    </aside>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-cols">
+        <div>
+            <h4>контакти</h4>
+            <address>
+                email: <a href="mailto:hello@plant-care-hub.test">hello@plant-care-hub.test</a>
+            </address>
+        </div>
+        <div>
+            <h4>посилання</h4>
+            <ul>
+                <li><a href="catalog.html">каталог</a></li>
+                <li><a href="community.html">спільнота</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">© 2026 plant-care-hub</p>
+</footer>
+</body>
+</html>

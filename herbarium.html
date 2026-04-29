@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plant-care-hub — мій гербарій</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="site-header" role="banner">
+    <div class="logo">
+        <img src="images/logo.svg" alt="логотип plant-care-hub" width="40" height="40">
+        <span>plant-care-hub</span>
+    </div>
+    <nav class="main-nav" aria-label="головна навігація">
+        <ul>
+            <li><a href="index.html">головна</a></li>
+            <li><a href="catalog.html">каталог</a></li>
+            <li><a href="herbarium.html" class="active">мій гербарій</a></li>
+            <li><a href="community.html">спільнота</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <a href="#" class="btn btn-ghost">login</a>
+        <a href="#" class="btn btn-primary">register</a>
+    </div>
+</header>
+
+<main class="herbarium-page">
+    <section class="my-plants" aria-label="мої рослини">
+        <h1>мій гербарій</h1>
+        <div class="plants-grid">
+            <article class="plant-card">
+                <img src="images/plant1.jpg" alt="моя монстера">
+                <h3>моня (монстера)</h3>
+                <p>наступний полив: 2026-05-12</p>
+                <button class="btn btn-primary">полив зроблено</button>
+            </article>
+            <article class="plant-card">
+                <img src="images/plant3.jpg" alt="моє алое">
+                <h3>колючка (алое)</h3>
+                <p>наступний полив: 2026-05-15</p>
+                <button class="btn btn-primary">полив зроблено</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="schedule" aria-label="графік поливу">
+        <h2>графік поливу</h2>
+        <table class="schedule-table">
+            <caption>що коли робити цього тижня</caption>
+            <thead>
+                <tr>
+                    <th>день</th>
+                    <th>рослина</th>
+                    <th>дія</th>
+                    <th>статус</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>понеділок</td>
+                    <td>моня</td>
+                    <td>полив</td>
+                    <td>✓</td>
+                </tr>
+                <tr>
+                    <td>середа</td>
+                    <td>колючка</td>
+                    <td>обприскування</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>пʼятниця</td>
+                    <td>моня</td>
+                    <td>підживлення</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>неділя</td>
+                    <td>колючка</td>
+                    <td>полив</td>
+                    <td>—</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="add-plant" aria-label="форма додавання рослини">
+        <h2>додати рослину</h2>
+        <form class="plant-form" action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>основне</legend>
+
+                <label>
+                    вид (з каталогу)
+                    <select name="species" required>
+                        <option value="">— оберіть —</option>
+                        <option value="monstera">монстера</option>
+                        <option value="ficus">фікус</option>
+                        <option value="aloe">алое</option>
+                        <option value="orchid">орхідея</option>
+                    </select>
+                </label>
+
+                <label>
+                    своя назва
+                    <input type="text" name="nickname" placeholder="напр. моня" required>
+                </label>
+
+                <label>
+                    дата придбання
+                    <input type="date" name="acquired_at">
+                </label>
+
+                <label>
+                    локація
+                    <select name="location">
+                        <option value="window">підвіконня</option>
+                        <option value="balcony">балкон</option>
+                        <option value="kitchen">кухня</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>догляд</legend>
+
+                <label>
+                    частота поливу (днів)
+                    <input type="range" name="watering" min="1" max="30" value="7">
+                </label>
+
+                <label>
+                    нотатки
+                    <textarea name="notes" rows="4" placeholder="особливості догляду"></textarea>
+                </label>
+
+                <label>
+                    фото
+                    <input type="file" name="photo" accept="image/*">
+                </label>
+            </fieldset>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">додати</button>
+                <button type="reset" class="btn btn-ghost">очистити</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-cols">
+        <div>
+            <h4>контакти</h4>
+            <address>
+                email: <a href="mailto:hello@plant-care-hub.test">hello@plant-care-hub.test</a>
+            </address>
+        </div>
+        <div>
+            <h4>посилання</h4>
+            <ul>
+                <li><a href="catalog.html">каталог</a></li>
+                <li><a href="community.html">спільнота</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">© 2026 plant-care-hub</p>
+</footer>
+</body>
+</html>
