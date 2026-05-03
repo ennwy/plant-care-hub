@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plant-care-hub — логін</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/validate.js" defer></script>
+</head>
+<body>
+<header class="site-header" role="banner">
+    <div class="logo">
+        <img src="images/logo.svg" alt="логотип plant-care-hub" width="40" height="40">
+        <span>plant-care-hub</span>
+    </div>
+    <nav class="main-nav" aria-label="головна навігація">
+        <ul>
+            <li><a href="index.html">головна</a></li>
+            <li><a href="catalog.html">каталог</a></li>
+            <li><a href="herbarium.html">мій гербарій</a></li>
+            <li><a href="community.html">спільнота</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <a href="login.html" class="btn btn-ghost active">login</a>
+        <a href="#" class="btn btn-primary">register</a>
+    </div>
+</header>
+
+<main class="login-page">
+    <section class="login-card" aria-label="форма логіну">
+        <h1>увійти</h1>
+        <p class="hint">тестові креди: <code>admin / plant1234</code> або <code>user / green2026</code></p>
+
+        <form id="loginForm" novalidate>
+            <label>
+                логін
+                <input type="text" id="username" name="username" autocomplete="username">
+                <span class="field-error" data-error-for="username"></span>
+            </label>
+
+            <label>
+                пароль
+                <input type="password" id="password" name="password" autocomplete="current-password">
+                <span class="field-error" data-error-for="password"></span>
+            </label>
+
+            <button type="submit" class="btn btn-primary">увійти</button>
+        </form>
+
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+    </section>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-cols">
+        <div>
+            <h4>контакти</h4>
+            <address>
+                email: <a href="mailto:hello@plant-care-hub.test">hello@plant-care-hub.test</a>
+            </address>
+        </div>
+        <div>
+            <h4>посилання</h4>
+            <ul>
+                <li><a href="catalog.html">каталог</a></li>
+                <li><a href="community.html">спільнота</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">© 2026 plant-care-hub</p>
+</footer>
+</body>
+</html>
