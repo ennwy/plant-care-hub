@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <rect width="300" height="420" fill="#f6f9f4"/>
+
+  <!-- leaves zone (rect 50,20 - 250,120) -->
+  <g>
+    <ellipse cx="100" cy="60" rx="55" ry="35" fill="#3d8b40" stroke="#1b3a1b" stroke-width="2"/>
+    <ellipse cx="200" cy="55" rx="55" ry="35" fill="#4caf50" stroke="#1b3a1b" stroke-width="2"/>
+    <ellipse cx="150" cy="100" rx="65" ry="30" fill="#388e3c" stroke="#1b3a1b" stroke-width="2"/>
+    <path d="M100 60 L150 130 M200 55 L150 130 M150 100 L150 130"
+          stroke="#1b3a1b" stroke-width="1" fill="none"/>
+    <text x="150" y="15" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b3a1b">лист</text>
+  </g>
+
+  <!-- stem zone (rect 50,120 - 250,260) -->
+  <g>
+    <rect x="143" y="130" width="14" height="130" fill="#6d4c2a" stroke="#1b3a1b" stroke-width="1.5"/>
+    <path d="M150 160 Q120 150 100 165" stroke="#388e3c" stroke-width="2" fill="none"/>
+    <path d="M150 200 Q180 195 200 210" stroke="#388e3c" stroke-width="2" fill="none"/>
+    <ellipse cx="95" cy="167" rx="14" ry="6" fill="#4caf50"/>
+    <ellipse cx="205" cy="212" rx="14" ry="6" fill="#4caf50"/>
+    <text x="265" y="200" text-anchor="end" font-family="sans-serif" font-size="11" fill="#1b3a1b">стебло</text>
+  </g>
+
+  <!-- soil line -->
+  <rect x="40" y="258" width="220" height="6" fill="#8d6e63"/>
+
+  <!-- root zone (circle center 150,320 r=80) -->
+  <g>
+    <circle cx="150" cy="320" r="78" fill="#5d4037" opacity="0.15" stroke="#5d4037" stroke-dasharray="4 3"/>
+    <path d="M150 264 Q140 290 120 320 Q110 350 100 380" stroke="#4e342e" stroke-width="2.5" fill="none"/>
+    <path d="M150 264 Q160 290 180 320 Q190 350 200 380" stroke="#4e342e" stroke-width="2.5" fill="none"/>
+    <path d="M150 264 L150 380" stroke="#4e342e" stroke-width="2.5" fill="none"/>
+    <path d="M120 320 L90 340 M180 320 L210 340 M150 340 L130 370 M150 340 L170 370"
+          stroke="#4e342e" stroke-width="1.5" fill="none"/>
+    <text x="150" y="410" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b3a1b">корінь</text>
+  </g>
+</svg>
