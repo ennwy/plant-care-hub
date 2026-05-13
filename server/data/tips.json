@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "author": "olena",
+    "title": "як полити фікус",
+    "body": "раз на тиждень, м'якою водою кімнатної температури. не заливати!",
+    "avatar": "/images/avatar1.png",
+    "image": "/images/tip1.jpg",
+    "likes": 12,
+    "comments": 3,
+    "created_at": "2026-05-09T18:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "author": "ivan",
+    "title": "освітлення для сукулентів",
+    "body": "пряме сонце вранці, притінення у спеку.",
+    "avatar": "/images/avatar2.png",
+    "image": "/images/tip2.jpg",
+    "likes": 8,
+    "comments": 1,
+    "created_at": "2026-05-08T14:30:00.000Z"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "author": "maria",
+    "title": "пересадка монстери",
+    "body": "раз на 2 роки, у горщик на 2 см більший.",
+    "avatar": "/images/avatar1.png",
+    "image": "/images/tip3.jpg",
+    "likes": 5,
+    "comments": 0,
+    "created_at": "2026-05-05T09:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "user_id": 1,
+    "author": "olena",
+    "title": "вологість для папоротей",
+    "body": "обприскуй щодня, тримай подалі від батарей.",
+    "avatar": "/images/avatar1.png",
+    "image": "/images/tip1.jpg",
+    "likes": 3,
+    "comments": 0,
+    "created_at": "2026-05-02T12:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "user_id": 1,
+    "author": "ivan",
+    "title": "горщик з дренажем",
+    "body": "завжди обирай горщик з отворами знизу, корені не загнивають.",
+    "avatar": "/images/avatar2.png",
+    "image": "/images/tip2.jpg",
+    "likes": 7,
+    "comments": 2,
+    "created_at": "2026-04-28T16:45:00.000Z"
+  }
+]
