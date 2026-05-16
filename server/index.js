@@ -5,6 +5,8 @@ import cors from 'cors';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import dotenv from 'dotenv';
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './swagger.js';
 
 import authRoutes from './routes/auth.js';
 import plantsRoutes from './routes/plants.js';
@@ -45,6 +47,10 @@ app.use('/api/plants', plantsRoutes);
 app.use('/api/tips', tipsRoutes);
 app.use('/api/users', usersRoutes);
 
+app.use('/api/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
+  customSiteTitle: 'plant-care-hub API',
+}));
+
 app.get('/api/health', (req, res) => res.json({ ok: true, ts: Date.now() }));
 
 app.use((err, req, res, next) => {
@@ -54,4 +60,5 @@ app.use((err, req, res, next) => {
 
 app.listen(PORT, () => {
   console.log(`server: http://localhost:${PORT}`);
+  console.log(`swagger: http://localhost:${PORT}/api/docs`);
 });
